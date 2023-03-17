@@ -1,5 +1,10 @@
+
 // Define the words to be typed
 const words = ['apple', 'banana', 'cat', 'dog'];
+
+// Define audio files
+const correctAudio = new Audio('a.wav');
+const incorrectAudio = new Audio('b.wav');
 
 // Initialize the game state
 let currentWordIndex = 0;
@@ -21,13 +26,13 @@ function checkWord() {
   const currentWord = words[currentWordIndex];
   const typedWord = input.value.trim().toLowerCase();
   if (typedWord === currentWord) {
-    // Play a cute sound and add effects
-    // (not implemented in this example)
+    // Play correct sound and add effects
+    correctAudio.play();
     score += 10;
     correctCount += 1;
   } else {
-    // Play an error sound and add effects
-    // (not implemented in this example)
+    // Play incorrect sound and add effects
+    incorrectAudio.play();
     score -= 5;
     mistakeCount += 1;
   }
