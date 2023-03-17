@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#word-container {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#input-container {
+  margin-bottom: 20px;
+}
+
+#score-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#score-container p {
+  font-size: 24px;
+}
+
+#score {
+  font-weight: bold;
+}
+
+#accuracy {
+  font-weight: bold;
+  color: green;
+}
+
+#speed {
+  font-weight: bold;
+  color: blue;
+}
